@@ -19,11 +19,4 @@ This repository contains the code and LaTeX source for the paper "GALVA-Q: A Hyb
 2. Run `python code/main_pipeline.py`
 
 ## Citation
-If you use this code or data in your work, please cite:
-```bibtex
-@article{buffoli2026galvaq,
-  title={GALVA-Q: ...},
-  author={Buffoli, Fabio},
-  journal={npj Quantum Information},
-  year={2026}
-}
+If you use this code or data in your work, please cite.
