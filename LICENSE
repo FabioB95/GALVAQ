@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+**B. LICENSE file** (critical for protection)
+- Go to https://choosealicense.com/ and pick one.
+- **Strongest protection for you**:
+  - **CC BY-NC-ND 4.0** (for the paper + data) — Attribution, Non-Commercial, No Derivatives. Prevents commercial use and modifications without permission.
+  - **MIT or Apache-2.0** (for the code) — Allows use with attribution, but you keep copyright.
+  - Or a **custom LICENSE** with "All Rights Reserved" + "For research and academic use only. Commercial use prohibited without written permission from the author."
+
+Copy the text of the license into a file named `LICENSE`.
+
+**C. .gitignore**
+Create this file to avoid uploading junk:
