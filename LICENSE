@@ -31,3 +31,45 @@ Copy the text of the license into a file named `LICENSE`.
 
 **C. .gitignore**
 Create this file to avoid uploading junk:
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+*.zip  # except the one you want to share
+data/large_files/
+
+
+
+**D. The ZIP file**
+- Zip the entire `galva-q` folder (or just the important parts).
+- Name it clearly: `galva-q_full_project_v1.0.zip`
+- Include everything needed to reproduce the paper (code + LaTeX + small data samples).
+- Do **not** include huge generated files (e.g., full 92k training dataset if it's massive — provide the generator script instead).
+
+### 4. Step-by-Step: How to Upload to GitHub
+1. Go to https://github.com/new
+2. Repository name: `galva-q` (or `GALVA-Q`)
+3. Description: "Hybrid quantum-machine learning framework for industrial electroplating optimization"
+4. Public (recommended) or Private (if you want to share only with reviewers first)
+5. **Do NOT** initialize with README (you'll upload your own)
+6. Click "Create repository"
+7. On the new repo page, click **"Add file" → "Upload files"**
+8. Drag and drop your entire `galva-q` folder (or the individual files + the ZIP)
+9. Write a commit message like "Initial release of GALVA-Q code and paper source"
+10. Click "Commit changes"
+
+**Alternative (cleaner)**: Use Git from your computer (if you're comfortable):
+- `git init`
+- Add files, commit, then `git remote add origin https://github.com/yourusername/galva-q.git`
+- `git push -u origin main`
+
+### 5. Extra Protection Steps
+- **Make a GitHub Release**: After uploading, go to "Releases" → "Create a new release". Attach your `galva-q_full_project.zip` as an asset. This gives a nice download button and version number.
+- **Add Zenodo integration** (highly recommended for papers): Link the repo to Zenodo → it will generate a permanent DOI for your code. This makes it citable and shows it's serious research.
+- **Enable branch protection** (Settings → Branches): Protect the `main` branch so nobody can push directly without a pull request (though forks are still possible).
+- **Security policy**: Add a simple `SECURITY.md` saying how to report issues.
+- **Watermark your code**: Add a header comment in every Python file:
+  ```python
+  # GALVA-Q — Copyright (c) 2026 Fabio Buffoli, Università degli Studi di Brescia
+  # All rights reserved. For research use only. Commercial use requires permission.
